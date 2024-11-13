@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+ <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,19 +18,22 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
             </form>
             <ul>
-                <li><a href="#"></a>Hjem</li>
-                <li><a href="#"></a>Produkter</li>
+                <li><a href="#">Hjem</a></li>
+                <li><a href="#">Produkter</a></li>
             </ul>
             <h2>Logo</h2>
             <ul>
                 <li><a href="#"></a>Katagorier</li>
                 <li><a href="#"></a>Kontakt oss</li>
             </ul>
-            <i class="fa-solid fa-user"></i>
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
+            <ul class="some" aria-label="Sosiale medier">
+                <li><a href="#" aria-label="fa-user"><i  class="fa-solid fa-user"></i></a></li>
+                <li><a href="#" aria-label="fa-heart"><i class="fa-regular fa-heart"></i></a></li>
+                <li><a href="#" aria-label="cart-shopping"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                
+            </ul>
         </nav>
-       
+    
     </header>
     <main>
         <h1>Kasse</h1>
@@ -39,44 +42,44 @@
             <article>
                 <img src="ressurser/Bilder/bildeavkjole.jpg" alt="bilde av kjole">
                 <!--https://fastly.picsum.photos/id/325/4928/3264.jpg?hmac=D_X6AKqCcH8IpWElX5X3dxx11yn7yYO-vPhiKhzRbwI-->
-                <H3>PRODUCT NAME</H3>
+                <h3>PRODUCT NAME</h3>
                 <P>Kr 1999</P>
                 <p>Farge: beige</p>
             </article>
             <article>
                 <img src="ressurser/Bilder/bildeavkjole.jpg" alt="bilde av kjole">
                 <!--https://fastly.picsum.photos/id/325/4928/3264.jpg?hmac=D_X6AKqCcH8IpWElX5X3dxx11yn7yYO-vPhiKhzRbwI-->
-                <H3>PRODUCT NAME</H3>
+                <h3>PRODUCT NAME</h3>
                 <P>Kr 1999</P>
                 <p>Farge: beige</p>
             </article>
             <article>
                 <img src="ressurser/Bilder/bildeavkjole.jpg" alt="bilde av kjole">
                 <!--https://fastly.picsum.photos/id/325/4928/3264.jpg?hmac=D_X6AKqCcH8IpWElX5X3dxx11yn7yYO-vPhiKhzRbwI-->
-                <H3>PRODUCT NAME</H3>
+                <h3>PRODUCT NAME</h3>
                 <P>Kr 1999</P>
                 <p>Farge: beige</p>
             </article>
             <article>
                 <img src="ressurser/Bilder/bildeavkjole.jpg" alt="bilde av kjole">
                 <!--https://fastly.picsum.photos/id/325/4928/3264.jpg?hmac=D_X6AKqCcH8IpWElX5X3dxx11yn7yYO-vPhiKhzRbwI-->
-                <H3>PRODUCT NAME</H3>
+                <h3>PRODUCT NAME</h3>
                 <P>Kr 1999</P>
                 <p>Farge: beige</p>
             </article>
         </section>
         <section>
             <h2>2. DIN OPPLYSNINGER</h2>
+            <p>Leveringadresse</p>
             <label>
-                <p>Leveringadresse</p>
                 <input type="text" placeholder="Fornavn*">
-                <input type="text" placeholder="Etternavn*">
+                <input type="text" id="Fornavn" placeholder="Etternavn*">
                 <input type="text" placeholder="Gateadresse*">
-                <input type="number" placeholder="Postnummer*" value=0 id="1">
+                <input type="number" placeholder="Postnummer*">
                 <input type="text" placeholder="Postnummer*">
             </label>
             <form>
-                <button id="sumit">lagre</button>
+                <button type="submit" id="submit">lagre</button>
                 <a href="#">avbryt</a>
             </form>
         </section>
@@ -105,13 +108,25 @@
         <section>
             <h2>4. BETALING</h2>
             <H3>BETALING MED KORT</H3>
-            <label for="kortnummer">kortnummer</label>
-            <input type="text" id="kortnummer" placeholder="342342****4435">
+            <p>kortnummer</p>
+            <input type="number" id="kortnummer" placeholder="342342****4435">
             <label for="date"></label>
             <input type="date" id="utlop">
             <label for="cvc"></label>
             <input type="password" id="cvc" placeholder="cvc/cvv">
+            <p>Å betale inkl.mva</p>
+            <p>1199 kr</p>
+            <a href="#">Fullfør kjøp</a>
+            <p>Du bekrefter herved at opplysningene og documentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufoullstendige opplysninger</p>
+            <form action="/action_page.php">
+                <input type="checkbox" id="melding1" name="melding1" value="melding">
+                <label for="vehicle1">Ja takk! Send nyhetersbrev til meg</label><br>
+                <input type="checkbox" id="melding2" name="melding2" value="melding">
+                <label for="vehicle2"> jeg ønsker å motta tekstmeldinger med tilbud og nyheter.</label><br>
+              </form>
+              
         </section>
+
     </main>
     <footer>
         <section>
@@ -120,10 +135,11 @@
         </section>
         <section>
             <h2>Kontakt</h2>
-            <P>Adresse B R A Veien 4, 1757 Halden</P>
-            <p>Telefon 69608000</p>
-            <p>E-post halden.hiof.no</p>
-            <p>Åpeningstider: stenger 14:00</p>
+            
+            <P> <i class="fa-solid fa-location-dot"></i> Adresse: B R A Veien 4, 1757 Halden</P>
+            <p><i class="fa-solid fa-phone"></i> Telefon: 69608000</p>
+            <p><i class="fa-solid fa-envelope"></i> E-post:  halden.hiof.no</p>
+            <p><i class="fa-solid fa-clock"></i> Åpeningstider: stenger 14:00</p>
         </section>
         <section>
             <h2>Snarveien</h2>
@@ -132,19 +148,13 @@
             <p>Kontakt oss</p>
         </section>
         <section>
-            <h2>SOSIALE MEDIER</h2>
-            <a href="https://www.instagram.com/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="https://www.linkedin.com/" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="https://no.pinterest.com/" target="_blank">
-                <i class="fa-brands fa-pinterest"></i>
-            </a>
+            <h3>SOSIALE MEDIER</h3>
+            <ul class="">
+                <li><a href="#" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#" aria-label="facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#" aria-label="linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="#" aria-label="pinterest"><i class="fa-brands fa-pinterest"></i></a></li>
+            </ul>
         </section>
     </footer>
 
