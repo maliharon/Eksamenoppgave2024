@@ -61,14 +61,16 @@ header nav ul {
     padding: 2px;
 }
 
-.categori{
+.categori article{
     text-align: center;
-}
-
-.categori1{
     border: 1px solid black;
     padding: 85px;
     margin: 8px;
+    background-color: black;
+}
+
+.categori1{
+    
 }
 .categori2{
     border: 1px solid black;
@@ -134,27 +136,24 @@ color: black;
     font-weight: bold;
 
 }
-.Lignende{
+.Lignende {
+list-style-type: none;  
+}
+.Lignende p{
     display: flex;
+    justify-content: right;
     
+    
+
 }
 
 
    
     
 
-.våre-mest-populære ul{
+.våre-mest-populære{
   display: flex;
-  list-style-type: none;
-  gap: 10px;
   
-}
-
-.våre-mest-populære li {
-border: 1px solid;
-padding: 10px;
-gap: 2px;
-
 }
 
 .våre-mest{
