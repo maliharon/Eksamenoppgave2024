@@ -1,15 +1,193 @@
 *{
     box-sizing: border-box;
+    
+    
 }
+.nav-links{
+   display: grid;
+   gap: 10px;
+   
+}
+    
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: antiquewhite;
 }
+
+img{
+    width: 100%;
+}
+.checkout{
+    width: 100%;
+    height: 10%;
+}
+
 footer ul{
     list-style-type: none;
     padding: 10px;
     margin: auto;
+    color: black;
+
+}
+footer ul li a{
+    color: black;
+}
+
+.sosiale{
+    display: grid;
+   gap: 10px;
+   color: black;
 }
  p{
     border-radius: box;
 }
+header nav ul {
+    
+    list-style-type: none;
+    padding: 5px;  
+}
+
+.nav-links li a{
+    color: black;
+    text-decoration: none;
+}
+
+.feltsøk input {
+   border: 2px solid black;
+   width: 55%;
+}
+
+.feltsøk i{
+    border: 2px solid black;
+    padding: 2px;
+}
+
+.categori{
+    text-align: center;
+}
+
+.categori1{
+    border: 1px solid black;
+    padding: 85px;
+    margin: 8px;
+}
+.categori2{
+    border: 1px solid black;
+    padding: 85px;
+    margin: 8px;
+}
+.categori3{
+    border: 1px solid black;
+    padding: 85px;
+    margin: 8px;
+}
+.categori4{
+    border: 1px solid black;
+    padding: 85px;
+    margin: 8px;
+}
+.categori5{
+    border: 1px solid black;
+    padding: 85px;
+    margin: 8px;
+}
+.section1{
+    border: 1px solid black;
+    padding: 30px;
+    margin: 5px;
+    background-color: rgb(130, 128, 128);
+}
+
+.section1 a{
+    background-color: white;
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+}
+
+
+.merke{
+    text-decoration: underline;
+
+}
+
+.grid-container{
+    display: grid;
+    
+}
+
+.navigasjon ul li a{
+text-decoration: none;
+margin: 10px;
+color: black;
+
+
+}
+.navigasjon ul li:last-child{
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.navigasjon ul li:nth-child(-n+2)::after{
+    content:">";
+    color: black;
+    font-weight: bold;
+
+}
+.Lignende{
+    display: flex;
+    
+}
+
+
+   
+    
+
+.våre-mest-populære ul{
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+  
+}
+
+.våre-mest-populære li {
+border: 1px solid;
+padding: 10px;
+gap: 2px;
+
+}
+
+.våre-mest{
+    list-style-type: none;
+}
+.din-opplysninger{
+    display: grid;
+    gap: 2px;
+    
+}
+
+.levering{
+    display: grid;
+    gap: 2px;
+}
+.input{
+    display: grid;
+    gap: 2px;
+}
+.checkbox{
+    display: grid;
+    gap: 2px;
+}
+
+.anmedels{
+    border: 1px solid black;
+    gap:100px;
+    padding: 5px;
+}
+
+.anmedels img{
+    width: 150px;
+}
+
+
+

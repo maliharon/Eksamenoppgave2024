@@ -11,24 +11,22 @@
     
 </head>
 <body>
-    <div>
+    <div class="forside">
         <header>
             <nav>
-                <form>
+                <form class="feltsøk">
                     <input type="search" placeholder="søke her">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </form>
-                <ul>
-                    <li><a href=""></a>Hjem</li>
-                    <li><a href=""></a>Produkter</li>
-                </ul>
-                <h1>Logo</h1>
-                <ul>
-                    <li><a href=""></a>Katagorier</li>
-                    <li><a href=""></a>Kontakt oss</li>
-                </ul>
-                <ul class="some" aria-label="Sosiale medier">
-                    <li><a href="#" aria-label="fa-user"><i class="fa-solid fa-user"></i></a></li>
+
+                <ul class="nav-links">
+                    <li><a href="#">Hjem</a></li>
+                    <li><a href="#">Produkter</a></li>
+                    <h2>Logo</h2>
+                    <li><a href="#">Katagorier</a></li>
+                    <li><a href="#">Kontakt oss</a></li>
+    
+                    <li><a href="#" aria-label="fa-user"><i  class="fa-solid fa-user"></i></a></li>
                     <li><a href="#" aria-label="fa-heart"><i class="fa-regular fa-heart"></i></a></li>
                     <li><a href="#" aria-label="cart-shopping"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 </ul>
@@ -36,23 +34,30 @@
            
         </header>
         <main>
-            <section> 
+            <section class="section1"> 
                 <h2>It is a long established fact that a reader will be distracted by the readable  </h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, illo, fugit cupiditate eius dolores sit tempore cumque temporibus iusto fuga eveniet, ut obc</p>
-                <a href="#">få en prove pakke i dag</a>
+                <a href="#">FÅ EN PRØVE PAKKE I DAG</a>
             </section>
            
             <section>
-                <h1> Våre mest populære Produkter</h1>
-                <p>Oppdag det beste av det beste</p>
-                <p>New product</p>
-                <p>Special Pric</p>
-                <p>Best Sellers</p>
+                        <h2> Våre mest populære Produkter</h2>
+                        <h3>Oppdag det beste av det beste</h3>
+                <article class="våre-mest-populære">
+                    <ul>
+            
+                        <li><p>New product</p></li>
+                        <li><p>Special Pric</p></li>
+                        <li><p>Best Sellers</p></li>
+                    </ul>
+                </article>
                 <article>
                     <img src="ressurser/Bilder/bildeavdesktopp.jpg" alt="bilde av skrivebord">
                     <!--https://fastly.picsum.photos/id/7/367/267.jpg?hmac=7scfIEZwG08cgYCiNifF6mEOaFpXAt2N-Q7oaA37ZQk-->
-                    <h2>produkt</h2>
-                    <p>Kr 1999</p>
+                    <ul>
+                        <li><h2>produkt</h2></li>
+                        <li><p>Kr 1999</p></li>
+                    </ul>
                 </article>
                 <article>
                     <img src="ressurser/Bilder/bildeavdesktopp.jpg" alt="bilde av skrivebord">
@@ -85,29 +90,31 @@
                     <p>Kr 1999</p>
                 </article>
             </section>
-            <section>
-                <h2>Våre mest populære Katagorier</h2>
-                <p>Oppdag beste av det beste</p>
-                <article>
+            <ul class="våre-mest">
+                <li><h2>Våre mest populære Katagorier</h2></li>
+                <li><p>Oppdag beste av det beste</p></li>
+            </ul> 
+            <section class="categori">
+                <article class="categori1">
                     <h3>Categori 1</h3>
                 </article>
-                <article>
+                <article class="categori2">
                     <h3>Categori 2</h3>
                 </article>
-                <article>
+                <article class="categori3">
                     <h3>Categori 3</h3>
                 </article>
-                <article>
+                <article class="categori4">
                     <h3>Categori 4</h3>
                 </article>
-                <article>
+                <article class="categori5">
                     <h3>Categori 5</h3>
                 </article>
             </section>
         </main>
         <aside>
-            <h2>Anmeldelser</h2>
-            <section>
+            <h2>Anmeldels</h2>
+            <section class="anmedels">
                 <img src="ressurser/Bilder/bildeavelv.jpg" alt="bilde av elv">
                 <!---https://fastly.picsum.photos/id/28/367/267.jpg?hmac=yLGWd6QHCcj0A8iajtgeax570C_GRx3TnhfJn8V0GM4-->
                 <h3>Rober Labrador</h3>
@@ -116,7 +123,7 @@
                     when an unknown printer took a galley of type and 
                     scrambled it to make a type specimen book.</p>
             </section>
-            <section>
+            <section class="anmedels">
                 <img src="ressurser/Bilder/bildeavelv.jpg" alt="bilde av elv">
                 <!---https://fastly.picsum.photos/id/28/367/267.jpg?hmac=yLGWd6QHCcj0A8iajtgeax570C_GRx3TnhfJn8V0GM4-->
                 <h3>Rober Labrador</h3>
@@ -125,7 +132,7 @@
                       when an unknown printer took a galley of type and 
                       scrambled it to make a type specimen book.</p>
             </section>
-            <section>
+            <section class="anmedels">
                 <img src="ressurser/Bilder/bildeavelv.jpg" alt="bilde av elv">
                 <!---https://fastly.picsum.photos/id/28/367/267.jpg?hmac=yLGWd6QHCcj0A8iajtgeax570C_GRx3TnhfJn8V0GM4-->
                 <h3>Rober Labrador</h3>
@@ -134,7 +141,7 @@
                       when an unknown printer took a galley of type and 
                       scrambled it to make a type specimen book.</p>
             </section>
-            <section>
+            <section class="anmedels">
                 <img src="ressurser/Bilder/bildeavelv.jpg" alt="bilde av elv">
                 <!---https://fastly.picsum.photos/id/28/367/267.jpg?hmac=yLGWd6QHCcj0A8iajtgeax570C_GRx3TnhfJn8V0GM4-->
                 <h3>Rober Labrador</h3>
@@ -153,10 +160,10 @@
             </section>
             <section>
                 <h2>Kontakt</h2>
-                <P>Adresse B R A Veien 4, 1757 Halden</P>
-                <p>Telefon 69608000</p>
-                <p>E-post halden.hiof.no</p>
-                <p>Åpeningstider: stenger 14:00</p>
+                <P> <i class="fa-solid fa-location-dot"></i> Adresse: B R A Veien 4, 1757 Halden</P>
+                <p><i class="fa-solid fa-phone"></i> Telefon: 69608000</p>
+                <p><i class="fa-solid fa-envelope"></i> E-post:  halden.hiof.no</p>
+                <p><i class="fa-solid fa-clock"></i> Åpeningstider: stenger 14:00</p>
             </section>
             <section>
                 <h2>Snarveien</h2>
@@ -166,16 +173,16 @@
             </section>
             <section>
                 <h3>SOSIALE MEDIER</h3>
-                <ul class="some" aria-label="Sosiale medier">
-                    <li><a href="#" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="#" aria-label="facebook"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="#" aria-label="linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="#" aria-label="pinterest"><i class="fa-brands fa-pinterest"></i></a></li>
+                <ul class="sosiale" aria-label="Sosiale medier">
+                    <li><a href="https://www.instagram.com/" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/" aria-label="facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.linkedin.com/" aria-label="linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://no.pinterest.com/" aria-label="pinterest"><i class="fa-brands fa-pinterest"></i></a></li>
                 </ul>
             </section>
         </footer>
-    
-    </body>
     </div>
+    </body>
+    
     
 </html>
