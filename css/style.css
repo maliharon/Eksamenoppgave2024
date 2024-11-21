@@ -68,30 +68,13 @@ header nav ul {
     margin: 8px;
     background-color: black;
 }
+.Katagorier{
+    border: 1px solid black;
+    padding: 85px;
+    margin: 4px;
+    text-align: center;
+}
 
-.categori1{
-    
-}
-.categori2{
-    border: 1px solid black;
-    padding: 85px;
-    margin: 8px;
-}
-.categori3{
-    border: 1px solid black;
-    padding: 85px;
-    margin: 8px;
-}
-.categori4{
-    border: 1px solid black;
-    padding: 85px;
-    margin: 8px;
-}
-.categori5{
-    border: 1px solid black;
-    padding: 85px;
-    margin: 8px;
-}
 .section1{
     border: 1px solid black;
     padding: 30px;
@@ -135,6 +118,7 @@ margin: 10px;
 color: black;
 
 
+
 }
 .navigasjon ul li:last-child{
     font-weight: bold;
@@ -148,13 +132,27 @@ color: black;
     font-weight: bold;
 
 }
+
+.navigasjon ul{
+    list-style-type: none;
+    
+}
+.navigasjon ul{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+
 .Lignende {
 list-style-type: none;  
 }
+.Lignende{
+    display: grid;
+  grid-template-columns: auto auto auto;
+}
+
 .Lignende p{
-    display: flex;
-    justify-content: right;
-    
+    margin: 25px;
     
 
 }
@@ -172,8 +170,10 @@ list-style-type: none;
     list-style-type: none;
 }
 .din-opplysninger{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 2px;
+
     
 }
 
@@ -194,10 +194,19 @@ list-style-type: none;
     border: 1px solid black;
     gap:100px;
     padding: 5px;
+    margin: 4px;
 }
 
 .anmedels img{
     width: 150px;
+}
+.submit{
+    display: flex;  
+}
+
+.kjøping{
+    text-decoration: none;
+    
 }
 
 
