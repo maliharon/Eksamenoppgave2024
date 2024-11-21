@@ -97,6 +97,7 @@ header nav ul {
     padding: 30px;
     margin: 5px;
     background-color: rgb(130, 128, 128);
+    text-align: right;
 }
 
 .section1 a{
@@ -104,6 +105,17 @@ header nav ul {
   text-decoration: none;
   color: black;
   padding: 5px;
+}
+
+.oppdagdetbeste{
+ text-align: center;
+ border: 2px solid;
+ width: 100px;
+ height: 35px;
+ display: inline-block;
+ justify-content: space-between;
+ margin: 10px;
+ 
 }
 
 
