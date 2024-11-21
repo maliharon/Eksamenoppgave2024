@@ -5,8 +5,7 @@
 }
 .nav-links{
    display: grid;
-   gap: 10px;
-   
+   gap: 10px; 
 }
     
 body{
@@ -89,18 +88,21 @@ header nav ul {
   color: black;
   padding: 5px;
 }
-
 .oppdagdetbeste{
- text-align: center;
+    display:flex;
+    margin: 2px;
+    padding: 15px;
+    border: 1px solid;
+    display: inline-block;
+      
+ /*text-align: center;
  border: 2px solid;
  width: 100px;
  height: 35px;
  display: inline-block;
  justify-content: space-between;
- margin: 10px;
- 
+ margin: 10px;*/
 }
-
 
 .merke{
     text-decoration: underline;
@@ -140,6 +142,7 @@ color: black;
 .navigasjon ul{
     display: grid;
     grid-template-columns: auto auto auto;
+    
 }
 
 
@@ -149,16 +152,13 @@ list-style-type: none;
 .Lignende{
     display: grid;
   grid-template-columns: auto auto auto;
+  text-align: center;
 }
 
 .Lignende p{
-    margin: 25px;
-    
+    margin: 22px;
 
-}
-
-
-   
+}  
     
 
 .våre-mest-populære{
@@ -173,8 +173,6 @@ list-style-type: none;
     display: flex;
     flex-direction: column;
     gap: 2px;
-
-    
 }
 
 .levering{
