@@ -30,7 +30,10 @@ footer ul{
 footer ul li a{
     color: black;
 }
+.footer{
 
+    border-top: 2px solid;
+}
 .sosiale{
     display: grid;
    gap: 10px;
@@ -143,6 +146,7 @@ color: black;
 .navigasjon ul{
     display: grid;
     grid-template-columns: auto auto auto;
+    padding: 0;
     
     
 }
@@ -152,15 +156,12 @@ color: black;
 list-style-type: none;  
 }
 .Lignende{
-    display: grid;
-  grid-template-columns: auto auto auto;
-  text-align: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0;
 }
 
-.Lignende p{
-    margin: 22px;
-
-}  
     
 
 .våre-mest-populære{
@@ -195,17 +196,31 @@ list-style-type: none;
     gap:100px;
     padding: 5px;
     margin: 4px;
+    padding-bottom: 30px;
 }
 
 .anmedels img{
     width: 150px;
 }
 .submit{
-    display: flex;  
+    background-color: rgb(70, 70, 70);
+    color: white;
+    border: 1px solid black;
+    padding:10px;
+}
+.avbryt{
+    display: grid;
+    color:blue;
+    padding-top: 30px;
 }
 
 .kjøping{
     text-decoration: none;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    border: 1px solid black;
+    height: 80px;
+    padding: 10px;
     
 }
 .merk{
