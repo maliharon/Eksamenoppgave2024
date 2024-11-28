@@ -1,180 +1,344 @@
 <!DOCTYPE html>
- <html lang="en">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="ressurser/Ikoneer/fontawesome-free-6.6.0-web/IKONER/css/fontawesome.css">
-    <link rel="stylesheet" href="ressurser/Ikoneer/fontawesome-free-6.6.0-web/IKONER/css/brands.css">
-    <link rel="stylesheet" href="ressurser/Ikoneer/fontawesome-free-6.6.0-web/IKONER/css/solid.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>checkout page</title>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to our online store. Find the best products and deals here.">
+  <meta name="keywords" content="e-commerce, products, shopping">
+  <meta name="author" content="Mohammed Haroun">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.ico">
+  <title>kasse side</title>
 </head>
 <body>
-    <div class="checkout">
-        <header>
+<div class="container">
+  <a href="#main-content" class="skip-to-content">Skip to Content</a>
+  <header>
+    <section class="header-container">
+
+      <span class="search-bar">
+        <input type="text" placeholder="Søk her" aria-label="Search">
+        <button aria-label="Search">
+          <img src="ressurser/Bilder/search.png" alt="Search Icon">
+        </button>
+      </span>
+
+      <section class="nav-logo">
         <nav>
-            <form class="feltsøk">
-                <input type="search" placeholder="søke her">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </form>
-
-            <ul class="nav-links">
-                <li><a href="forside.html">Hjem</a></li>
-                <li><a href="forside.html#beste-produkter">Produkter</a></li>
-                <li><a href="#forside.html"><h1>Logo</h1></a></li>
-                <li><a href="forside.html#mest-populære-produkter">Katagorier</a></li>
-                <li><a href="forside.html#informasjon">Kontakt oss</a></li>
-
-                <li><a href="#" aria-label="fa-user"><i  class="fa-solid fa-user"></i></a></li>
-                <li><a href="#" aria-label="fa-heart"><i class="fa-regular fa-heart"></i></a></li>
-                <li><a href="checkout.html" aria-label="cart-shopping"><i class="fa-solid fa-cart-shopping"></i></a></li>
-            </ul>
+          <ul class="nav-links">
+            <li><a href="forside.html">Hjem</a></li>
+            <li><a href="forside.html#popular-products">Produkter</a></li>
+          </ul>
         </nav>
+        <h1 class="logo">Logo</h1>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="forside.html#popular-categories">Kategorier</a></li>
+            <li><a href="forside.html#footer">Kontakt oss</a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <mark class="header-icons">
+        <a href="#" aria-label="User Account"><img src="ressurser/Bilder/Sample_User_Icon.png" alt="User"></a>
+        <a href="#" aria-label="Favorites"><img src="ressurser/Bilder/678087-heart-512.webp" alt="Favorites"></a>
+        <a href="checkout.html" aria-label="Shopping Cart"><img src="ressurser/Bilder/basket-cart-icon-27.png" alt="Cart"></a>
+      </mark>
+    </section>
+  </header>
+
+  <main id="main-content">
+    <section class="checkout-page">
+      
+      <nav class="breadcrumb">
+        <a href="forside.html">Fortsett og handle</a>
+      </nav>
+
+      
+      <h1 class="checkout-title">Kasse</h1>
+
+      <section class="checkout-section">
+        <h2>1. Shoppingbagen din</h2>
+        <section class="shopping-cart">
+          <section class="cart-item">
+            <img src="ressurser/Bilder/dress.png" alt="Product Image">
+            <article class="cart-details">
+              <h3>Product Name</h3>
+              <p>Kr 1999</p>
+              <p>Farge: Beige</p>
+              <span class="item-options">
+                <label for="size">Størrelse:</label>
+                <select id="size1">
+                  <option value="s">S</option>
+                  <option value="m">M</option>
+                  <option value="l">L</option>
+                </select>
+                <label for="quantity">Antall:</label>
+                <input id="quantity1" type="number" value="1" min="1">
+              </span>
+            </article>
+
+            <button class="wishlist-button" aria-label="Add to Wishlist">
+              <img src="ressurser/Bilder/free-heart-icon-3510-thumb.png" alt="Heart Icon">
+            </button>
+            <button class="remove-item-button" aria-label="Remove Item">
+              <img src="ressurser/Bilder/free-trash-icon-347-thumb.png" alt="Trash Bin Icon">
+            </button>
+          </section>
+          <section class="cart-item">
+            <img src="ressurser/Bilder/dress.png" alt="Product Image">
+            <section class="cart-details">
+              <h3>Product Name</h3>
+              <p>Kr 1999</p>
+              <p>Farge: Beige</p>
+              <section class="item-options">
+                <label for="size">Størrelse:</label>
+                <select id="size2">
+                  <option value="s">S</option>
+                  <option value="m">M</option>
+                  <option value="l">L</option>
+                </select>
+                <label for="quantity">Antall:</label>
+                <input id="quantity2" type="number" value="1" min="1">
+              </section>
+            </section>
+            
+            <button class="wishlist-button" aria-label="Add to Wishlist">
+              <img src="ressurser/Bilder/free-heart-icon-3510-thumb.png" alt="Heart Icon">
+            </button>
+
+            <button class="remove-item-button" aria-label="Remove Item">
+              <img src="ressurser/Bilder/free-trash-icon-347-thumb.png" alt="Trash Bin Icon">
+            </button>
+          </section>
+          <section class="cart-item">
+            <img src="ressurser/Bilder/dress.png" alt="Product Image">
+            <section class="cart-details">
+              <h3>Product Name</h3>
+              <p>Kr 1999</p>
+              <p>Farge: Beige</p>
+              <span class="item-options">
+                <label for="size">Størrelse:</label>
+                <select id="size">
+                  <option value="s">S</option>
+                  <option value="m">M</option>
+                  <option value="l">L</option>
+                </select>
+                <label for="quantity">Antall:</label>
+                <input id="quantity" type="number" value="1" min="1">
+              </span>
+            </section>
+            <button class="wishlist-button" aria-label="Add to Wishlist">
+              <img src="ressurser/Bilder/free-heart-icon-3510-thumb.png" alt="Heart Icon">
+            </button>
+
+            <button class="remove-item-button" aria-label="Remove Item">
+              <img src="ressurser/Bilder/free-trash-icon-347-thumb.png" alt="Trash Bin Icon">
+            </button>
+          </section>
+        </section>
+      </section>
+
+      <section class="customer-information">
+        <h2>2. Dine opplysninger</h2>
+
+        <form action="#" method="post" class="info-form">
     
-    </header>
-    <main>
-        <h1>Kasse</h1>
-        <section>
-            <h2>1. SHOPPINGBAGEN DIN</h2>
-            
-                <img src="ressurser/Bilder/bildeavkjole.jpg" alt="bilde av kjole">
-                <!--https://fastly.picsum.photos/id/325/4928/3264.jpg?hmac=D_X6AKqCcH8IpWElX5X3dxx11yn7yYO-vPhiKhzRbwI-->
-                <h3>Produktnavn</h3>
-                <P>Kr 1999</P>
-                <p>Farge: beige</p>
+          <section class="form-row">
+            <section class="form-group">
+              <label for="first-name">Fornavn*</label>
+              <input type="text" id="first-name" placeholder="Nora" required>
+            </section>
+            <section class="form-group">
+              <label for="last-name">Etternavn*</label>
+              <input type="text" id="last-name" placeholder="Nordman" required>
+            </section>
+          </section>
+          <section class="form-row">
+            <section class="form-group full-width">
+              <label for="street-address">Gateadresse*</label>
+              <input type="text" id="street-address" placeholder="BRA veien 4*" required>
+            </section>
+          </section>
 
-            
-                <img src="ressurser/Bilder/bildeavkjole.jpg" alt="bilde av kjole">
-                <!--https://fastly.picsum.photos/id/325/4928/3264.jpg?hmac=D_X6AKqCcH8IpWElX5X3dxx11yn7yYO-vPhiKhzRbwI-->
-                <h3>Produktnavn</h3>
-                <P>Kr 1999</P>
-                <p>Farge: beige</p>
+          <section class="form-row">
+            <section class="form-group">
+              <label for="postal-code">Postnummer*</label>
+              <input type="text" id="postal-code" placeholder="1752" required>
+            </section>
+            <div class="form-group">
+              <label for="city">Poststed*</label>
+              <input type="text" id="city" placeholder="Halden" required>
+            </div>
+          </section>
 
-            
-                <img src="ressurser/Bilder/bildeavkjole.jpg" alt="bilde av kjole">
-                <!--https://fastly.picsum.photos/id/325/4928/3264.jpg?hmac=D_X6AKqCcH8IpWElX5X3dxx11yn7yYO-vPhiKhzRbwI-->
-                <h3>Produktnavn</h3>
-                <P>Kr 1999</P>
-                <p>Farge: beige</p>
-
-            
-                <img src="ressurser/Bilder/bildeavkjole.jpg" alt="bilde av kjole">
-                <!--https://fastly.picsum.photos/id/325/4928/3264.jpg?hmac=D_X6AKqCcH8IpWElX5X3dxx11yn7yYO-vPhiKhzRbwI-->
-                <h3>Produktnavn</h3>
-                <P>Kr 1999</P>
-                <p>Farge: beige</p>
-
-        </section>
-        <section id="person-opplysninger">
-            <h2>2. DIN OPPLYSNINGER</h2>
-            <p>Leveringadresse</p>
-                <form class="din-opplysninger"> 
-                    <label>
-                        <input type="text" placeholder="Fornavn*">
-                    </label>
-                    <label>
-                        <input type="text" placeholder="Etternavn*">
-
-                    </label>
-                    <label>
-                        <input type="text" placeholder="Gateadresse*">
-
-                    </label>
-                    
-                    <label>
-                        <input type="number" placeholder="Postnummer*">
-
-                    </label>
-                    <label>
-                        <input type="text" placeholder="Postnummer*">
-                    </label>
-                </form>
-            
-                <button type="submit" class="submit">lagre</button>
-                <a href="#" class="avbryt">avbryt</a>
-        </section>
-        <section>
-            <h3>3.LEVERING</h3>
-            <p>LEVERINGSVALG</p>
-            <form class="levering">
-                <label>
-                    <input type="radio" name="levering" value="Express">
-                    Express Hjemlevering 
-                </label>
-            <label>
-                <input type="radio" name="levering" value="Ekspress">
-                 Ekspress Pakke til utleveringssted
+          <section class="form-row">
+            <section class="form-group full-width">
+              <label for="email">E-post*</label>
+              <input type="email" id="email" placeholder="Noranordman@hiof.no.*" required>
+            </section>
+            <section class="form-group full-width">
+              <label for="phone">Telefon</label>
+              <input type="tel" id="phone" placeholder="+4749***018" required>
+            </section>
+          </section>
+          <section class="form-actions">
+            <button type="submit" class="save-button">Lagre</button>
+            <a href="#" class="cancel-button">Avbryt</a>
+          </section>
+        </form>
+      </section>
+      <section class="delivery-section">
+        <h2>3. Levering</h2>
+        <h3>Leveringsvalg</h3>
+        <section class="delivery-options">
+          <article class="delivery-option">
+            <input type="radio" id="express-home" name="delivery" value="express-home">
+            <label for="express-home">
+              <span class="option-header">
+                <span class="option-title">Express Hjemlevering</span>
+                <span class="option-price">59 kr <span class="icon">🚚</span></span>
+              </span>
+              <span class="option-details">
+                <strong>3-4 Virkedager</strong>
+                <span>
+                  Bestill hverdag før 08:00* for levering neste arbeidsdag. Leveres hjem til deg før frokost mandag til lørdag. *For levering til postnummer 4000-7999 er leveringstiden 2 arbeidsdager, for postnummer 8000-9999 er leveringstiden 3 arbeidsdager.
+                </span>
+              </span>
             </label>
-            <label>
-                <input type="radio" name="levering" value="Standard">
-                Standard Hjemlevering 
+            <span class="confirm-check">
+              <input type="checkbox" id="express-home-checkbox">
+              <label for="express-home-checkbox">Bekreft leveringstype</label>
+            </span>
+          </article>
+          <section class="delivery-option">
+            <input type="radio" id="express-pickup" name="delivery" value="express-pickup">
+            <label for="express-pickup">
+              <span class="option-header">
+                <span class="option-title">Ekspress Pakke til utleveringssted</span>
+                <span class="option-price">59 kr <span class="icon">📦</span></span>
+              </span>
+              <span class="option-details">
+                <strong>1-3 Virkedager</strong>
+              </span>
             </label>
-            </form>
-                
+            <div class="confirm-check">
+              <input type="checkbox" id="express-pickup-checkbox">
+              <label for="express-pickup-checkbox">Bekreft leveringstype</label>
+            </div>
+          </section>
+          <section class="delivery-option">
+            <input type="radio" id="standard-home" name="delivery" value="standard-home">
+            <label for="standard-home">
+              <span class="option-header">
+                <span class="option-title">Standard Hjemlevering</span>
+                <span class="option-price">Gratis <span class="icon">🎁</span></span>
+              </span>
+              <span class="option-details">
+                <strong>5-8 Virkedager</strong>
+                <span>
+                  Leveres hjem til deg før frokost mandag til lørdag innen 4-7 hverdager.
+                </span>
+              </span>
+            </label>
+            <section class="confirm-check">
+              <input type="checkbox" id="standard-home-checkbox">
+              <label for="standard-home-checkbox">Bekreft leveringstype</label>
+            </section>
+          </section>
         </section>
-        <section>
-            <h2>4. BETALING</h2>
-            <H3>BETALING MED KORT</H3>
-            <form class="input">
-                kortnummer
-                <input type="number" id="kortnummer" placeholder="342342****4435">
-                utløpsdato
-                <input type="date">
-                cvc/cvv
-                <input type="password" placeholder="cvc/cvv">
-              </form>
-            <p>Å betale inkl.mva</p>
-            <p>1199 kr</p>
-            <a href="#" class="kjøping">Fullfør kjøp</a>
-            <p>Du bekrefter herved at opplysningene og documentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufoullstendige opplysninger</p>
-            <form action="/action_page.php" class="checkbox">
-                <label>
-                    <input type="checkbox"  name="melding1" value="melding">
-                    Ja takk! Send nyhetersbrev til meg
-                </label>
+      </section>
+      <section class="payment-section">
+        <h2>4. Betaling</h2>
 
-                
-                <label>
-                    <input type="checkbox" id="melding2" name="melding2" value="melding">
-                     jeg ønsker å motta tekstmeldinger med tilbud og nyheter.</label>
-              </form>
-              
+        <section class="payment-container">
+          <section class="payment-method">
+            <h3>Betal med kort <span class="card-icon">💳</span></h3>
+            <label for="card-number">Kortnummer</label>
+            <input type="text" id="card-number" placeholder="342342****4435" readonly>
+          </section>
+          <section class="payment-details">
+            <section class="expiry-date">
+              <label for="expiry-date">Utløpsdato</label>
+              <input type="text" id="expiry-date" placeholder="mm / dd / yyyy">
+            </section>
+            <div class="cvc-code">
+              <label for="cvc">CVC/CVV</label>
+              <input type="text" id="cvc" placeholder="CVC/CVV">
+            </div>
+          </section>
         </section>
+      </section>
 
-    </main>
-    <footer class="footer">
-        <section>
-            <h2>Logo</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        </section>
-        <section>
-            <h2>Kontakt</h2>
-            
-            <P> <i class="fa-solid fa-location-dot"></i> Adresse: B R A Veien 4, 1757 Halden</P>
-            <p><i class="fa-solid fa-phone"></i> Telefon: 69608000</p>
-            <p><i class="fa-solid fa-envelope"></i> E-post:  halden.hiof.no</p>
-            <p><i class="fa-solid fa-clock"></i> Åpeningstider: stenger 14:00</p>
-        </section>
-        <section >
-            <h2>Snarveien</h2>
-            <p><a href="forside.html#beste-produkter"></a>Produkter</p>
-            <p><a href="forside.html#mest-populære-produkter"></a>Katagorier</p>
-            <p><a href="#informasjon"></a>Kontakt oss</p>
-            <a href="#">tilgjengelighetserklæring</a>
-        </section>
 
-        <section>
-            <h3>SOSIALE MEDIER</h3>
-            <ul class="sosiale" aria-label="Sosiale medier">
-                <li><a href="https://www.instagram.com/" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://www.facebook.com/" aria-label="facebook"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="https://www.linkedin.com/" aria-label="linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="https://no.pinterest.com/" aria-label="pinterest"><i class="fa-brands fa-pinterest"></i></a></li>
-            </ul>
+      <section class="order-summary">
+        <p>Å betale inkl. mva.</p>
+        <h3>1 199 kr</h3>
+        <button class="complete-order">Fullfør kjøp</button>
+        <p class="confirmation-text">
+          Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige.
+          Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger
+          uriktige eller ufullstendige opplysninger.
+        </p>
+
+        <section class="confirmation-checkboxes">
+          <label>
+            <input type="checkbox">
+            Ja takk! Send nyhetsbrev til meg.
+          </label>
+          <label>
+            <input type="checkbox">
+            Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.
+          </label>
         </section>
-    </footer>
-    </div>
-    
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <section class="footer-container" id="contact">
+
+      <article class="footer-section full-width">
+        <h1>Logo</h1>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+      </article>
+
+      
+      <article class="footer-section">
+        <h2>Kontakt</h2>
+        <ul>
+          <li><span>📍 Adresse:</span> B R A Veien 4, 1757 Halden</li>
+          <li><span>📞 Telefon:</span> 69 60 80 00</li>
+          <li><span>✉️ E-post:</span> halden@hiof.no</li>
+          <li><span>⏰ Åpningstider:</span> Stenger 15:00</li>
+        </ul>
+      </article>
+
+      
+      <article class="footer-section">
+        <h2>Snarveier</h2>
+        <ul>
+          <li><a href="forside.html#popular-products">Produkter</a></li>
+          <li><a href="forside.html#popular-categories">Kategorier</a></li>
+          <li><a href="#contact">Kontakt oss</a></li>
+          <li><a href="">tilgjenlighetserklæring</a></li>
+        </ul>
+      </article>
+
+      
+      <article class="footer-section">
+        <h2>Sosiale Medier</h2>
+        <section class="social-icons">
+            <a href="https://www.instagram.com/"><img src="ressurser/Bilder/instegram.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/"><img src="ressurser/Bilder/facebook.png" alt="Facebook"></a>
+            <a href="https://www.linkedin.com/"><img src="ressurser/Bilder/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://no.pinterest.com/"><img src="ressurser/Bilder/pintest.jpg" alt="Pinterest"></a>
+        </section>
+      </article>
+    </section>
+  </footer>
+  <button id="back-to-top" aria-label="Back to Top">↑</button>
+</div>
+<script src="ressurser/script.js"></script>
 </body>
 </html>

@@ -1,180 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="ressurser/Ikoneer/fontawesome-free-6.6.0-web/IKONER/css/fontawesome.css">
-    <link rel="stylesheet" href="ressurser/Ikoneer/fontawesome-free-6.6.0-web/IKONER/css/brands.css">
-    <link rel="stylesheet" href="ressurser/Ikoneer/fontawesome-free-6.6.0-web/IKONER/css/solid.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>forside</title>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to our online store. Find the best products and deals here.">
+  <meta name="keywords" content="e-commerce, products, shopping">
+  <meta name="author" content="Mohammed Haroun">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.ico">
+  <title>forside</title>
 </head>
 <body>
-    <div class="forside">
-        <header>
-            <nav>
-                <form class="feltsøk">
-                    <input type="search" placeholder="søke her">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </form>
+<div class="container">
+<a href="#main-content" class="skip-to-content">Skip to Content</a>
+  <header>
+    <section class="header-container">
+      <!-- Search Bar -->
+      <span class="search-bar">
+        <input type="text" placeholder="Søk her" aria-label="Search">
+        <button aria-label="Search">
+          <img src="ressurser/Bilder/search.png" alt="Search Icon">
+        </button>
+      </span>
 
-                <ul class="nav-links">
-                    <li><a href="forside.html">Hjem</a></li>
-                    <li><a href="#beste-produkter">Produkter</a></li>
-                    <li><a href="#forside.html"><h1>Logo</h1></a></li>
-                    <li><a href="#mest-populære-produkter">Katagorier</a></li>
-                    <li><a href="#informasjon">Kontakt oss</a></li>
+      <!-- Navigation -->
+      <!-- Logo and Navigation -->
+      <section class="nav-logo">
+        <nav>
+          <ul class="nav-links">
+            <li><a href="forside.html">Hjem</a></li>
+            <li><a href="#popular-products">Produkter</a></li>
+          </ul>
+        </nav>
+        <h1 class="logo">Logo</h1>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#popular-categories">Kategorier</a></li>
+            <li><a href="#contact">Kontakt oss</a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <article class="header-icons">
+        <a href="#" aria-label="User Account"><img src="ressurser/Bilder/Sample_User_Icon.png" alt="User"></a>
+        <a href="#" aria-label="Favorites"><img src="ressurser/Bilder/678087-heart-512.webp" alt="Favorites"></a>
+        <a href="checkout.html" aria-label="Shopping Cart"><img src="ressurser/Bilder/basket-cart-icon-27.png" alt="Cart"></a>
+      </article>
+    </section>
+  </header>
+
+<main id="main-content">
+
+  <section class="slider">
+  
+    <button class="slider-nav left-arrow">❮</button>
+
+
+    <article class="slider-track">
+      <section class="slider-frame">
+        <img src="ressurser/Bilder/banaf.jpg" alt="Slide 1" class="slider-image">
+        <section class="banner-content">
+          <h1>Et harum quidem  expedita distinctio.</h1>
+          <p>Nam nihil impedit quo minus id quod maxime placeat facere possimus.</p>
+          <button class="learn-more">LES MER</button>
+        </section>
+      </section>
+      <section class="slider-frame">
+        <img src="ressurser/Bilder/train.jpg" alt="Slide 2" class="slider-image">
+        <section class="banner-content">
+          <h1>Discover New Adventures.</h1>
+          <p>Explore the best deals and exclusive offers tailored just for you.</p>
+          <button class="learn-more">EXPLORE</button>
+        </section>
+      </section>
+      <section class="slider-frame">
+        <img src="ressurser/Bilder/plant.jpg" alt="Slide 3" class="slider-image">
+        <section class="banner-content">
+          <h1>Unparalleled Quality Awaits.</h1>
+          <p>Immerse yourself in an experience that redefines excellence.</p>
+          <button class="learn-more">DISCOVER</button>
+        </section>
+      </section>
+    </article>
+
+    <button class="slider-nav right-arrow">❯</button>
+  </section>
+  <section id="popular-products">
+    <h2>Våre mest populære produkter</h2>
+    <p>Oppdag det beste av det beste</p>
+    <article class="filter-buttons">
+      <button type="button">New Product</button>
+      <button type="button">Special Price</button>
+      <button type="button">Best Sellers</button>
+    </article>
+    <section class="product-grid">
+      <section class="product-card">
+        <a href="produkt.html">
+            <img src="ressurser/Bilder/train.jpg" alt="Product 1">
+        </a>
+        <span class="product-info">
+          <span class="product-name">Product name</span>
+          <span class="product-price">Kr 1999</span>
+        </span>
+        <span class="rating">
+          <span>⭐</span> <span>⭐</span> <span>⭐</span> <span>⭐</span> <span>☆</span>
+          <span class="reviews">842 Reviews</span>
+        </span>
+      </section>
+      <section class="product-card">
+        <a href="produkt.html">
+            <img src="ressurser/Bilder/train.jpg" alt="Product 2">
+        </a>
+        <span class="product-info">
+          <span class="product-name">Product name</span>
+          <span class="product-price">Kr 1999</span>
+        </span>
+        <span class="rating">
+          <span>⭐</span> <span>⭐</span> <span>⭐</span> <span>⭐</span> <span>☆</span>
+        <span class="reviews">842 Reviews</span>
+        </span>
+      </section>
+      <section class="product-card">
+        <a href="produkt.html">
+            <img src="ressurser/Bilder/train.jpg" alt="Product 3">
+        </a>
+        <span class="product-info">
+          <span class="product-name">Product name</span>
+          <span class="product-price">Kr 1999</span>
+        </span>
+        <span class="rating">
+          <span>⭐</span> <span>⭐</span> <span>⭐</span> <span>⭐</span> <span>☆</span>
+        <span class="reviews">842 Reviews</span>
+        </span>
+      </section>
+      <section class="product-card">
+        <a href="produkt.html">
+            <img src="ressurser/Bilder/train.jpg" alt="Product 4">
+        </a>
+        <span class="product-info">
+          <span class="product-name">Product name</span>
+          <span class="product-price">Kr 1999</span>
+        </span>
+        <span class="rating">
+          <span>⭐</span> <span>⭐</span> <span>⭐</span> <span>⭐</span> <span>☆</span>
+        <span class="reviews">842 Reviews</span>
+        </span>
+      </section>
+      <section class="product-card">
+        <a href="produkt.html">
+            <img src="ressurser/Bilder/train.jpg" alt="Product 5">
+        </a>
+        <span class="product-info">
+          <span class="product-name">Product name</span>
+          <span class="product-price">Kr 1999</span>
+        </span>
+        <span class="rating">
+          <span>⭐</span> <span>⭐</span> <span>⭐</span> <span>⭐</span> <span>☆</span>
+        <span class="reviews">842 Reviews</span>
+        </span>
+      </section>
+      <section class="product-card">
+        <a href="produkt.html">
+            <img src="ressurser/Bilder/train.jpg" alt="Product 6">
+        </a>
+        <span class="product-info">
+          <span class="product-name">Product name</span>
+          <span class="product-price">Kr 1999</span>
+        </span>
+        <span class="rating">
+          <span>⭐</span> <span>⭐</span> <span>⭐</span> <span>⭐</span> <span>☆</span>
+        <span class="reviews">842 Reviews</span>
+            </span>
+      </section>
+    </section>
+  </section>
+  <section id="popular-categories">
+    <h2>Våre mest populære kategorier</h2>
+    <p>Oppdag det beste av det beste</p>
+    <article class="category-grid">
+      <a class="category-card" style="background-image: url('ressurser/Bilder/sko.jpg');">Category 1</a>
+      <a class="category-card" style="background-image: url('ressurser/Bilder/office.jpg');">Category 2</a>
+      <a class="category-card" style="background-image: url('ressurser/Bilder/plant.jpg');">Category 3</a>
+      <a class="category-card large-card" style="background-image: url('ressurser/Bilder/skitborad.jpg');">Category 4</a>
+      <a class="category-card small-card" style="background-image: url('ressurser/Bilder/robot.jpg');">Category 5</a>
+    </article>
+  </section>
+
+  <section id="reviews">
+    <h2>Anmeldelser</h2>
+    <article class="reviews-grid">
+      <div class="review-card">
+        <img src="ressurser/Bilder/robert.jpg" alt="Reviewer 1">
+        <h3>Rober Labrador</h3>
+        <mark class="stars">⭐⭐⭐⭐☆</mark>
+        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quod minus id quod maxime placeat facere possimus...</p>
+      </div>
+      <div class="review-card">
+        <img src="ressurser/Bilder/robert.jpg" alt="Reviewer 2">
+        <h3>Rober Labrador</h3>
+        <mark class="stars">⭐⭐⭐⭐☆</mark>
+        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quod minus id quod maxime placeat facere possimus...</p>
+      </div>
+      <div class="review-card">
+        <img src="ressurser/Bilder/robert.jpg" alt="Reviewer 3">
+        <h3>Rober Labrador</h3>
+        <mark class="stars">⭐⭐⭐☆☆</mark>
+        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quod minus id quod maxime placeat facere possimus...</p>
+      </div>
+      <div class="review-card">
+        <img src="ressurser/Bilder/robert.jpg" alt="Reviewer 4">
+        <h3>Rober Labrador</h3>
+        <mark class="stars">⭐⭐⭐⭐⭐</mark>
+        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quod minus id quod maxime placeat facere possimus...</p>
+      </div>
+    </article>
+  </section>
+</main>
+<footer>
+  <section class="footer-container" id="contact">
     
-                    <li><a href="#" aria-label="fa-user"><i  class="fa-solid fa-user"></i></a></li>
-                    <li><a href="#" aria-label="fa-heart"><i class="fa-regular fa-heart"></i></a></li>
-                    <li><a href="checkout.html" aria-label="cart-shopping"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                </ul>
-            </nav>
-           
-        </header>
-        <main>
-            <section class="section1"> 
-                <h2>It is a long established fact that a reader will be distracted by the readable  </h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, illo, fugit cupiditate eius dolores sit tempore cumque temporibus iusto fuga eveniet, ut obc</p>
-                <a href="#" > FÅ EN PRØVE PAKKE I DAG </a>
-            </section>
-           
-            <section id="beste-produkter">
-                           <h2> Våre mest populære Produkter</h2>
-                            <p>Oppdag det beste av det beste</p>
-                            <p class="oppdagdetbeste">New product</p>
-                            <p class="oppdagdetbeste">Special Price</p>
-                            <p class="oppdagdetbeste">Best Sellers</p>
-                
-                <article>
-                    <img src="ressurser/Bilder/bildeavdesktopp.jpg" alt="bilde av skrivebord">
-                    <!--https://fastly.picsum.photos/id/7/367/267.jpg?hmac=7scfIEZwG08cgYCiNifF6mEOaFpXAt2N-Q7oaA37ZQk-->
-                        <h2>produkt</h2>
-                        <p>Kr 1999</p>
-                </article>
-                <article>
-                    <img src="ressurser/Bilder/bildeavdesktopp.jpg" alt="bilde av skrivebord">
-                    <!--https://fastly.picsum.photos/id/7/367/267.jpg?hmac=7scfIEZwG08cgYCiNifF6mEOaFpXAt2N-Q7oaA37ZQk-->
-                    <h2>produkt</h2>
-                    <p>Kr 1999</p>
-                </article>
-                <article>
-                    <img src="ressurser/Bilder/bildeavdesktopp.jpg" alt="bilde av skrivebord">
-                    <!--https://fastly.picsum.photos/id/7/367/267.jpg?hmac=7scfIEZwG08cgYCiNifF6mEOaFpXAt2N-Q7oaA37ZQk-->
-                    <h2>produkt</h2>
-                    <p>Kr 1999</p>
-                </article>
-                <article>
-                    <img src="ressurser/Bilder/bildeavdesktopp.jpg" alt="bilde av skrivebord">
-                    <!--https://fastly.picsum.photos/id/7/367/267.jpg?hmac=7scfIEZwG08cgYCiNifF6mEOaFpXAt2N-Q7oaA37ZQk-->
-                    <h2>produkt</h2>
-                    <p>Kr 1999</p>
-                </article>
-                <article>
-                    <img src="ressurser/Bilder/bildeavdesktopp.jpg" alt="bilde av skrivebord">
-                    <!--https://fastly.picsum.photos/id/7/367/267.jpg?hmac=7scfIEZwG08cgYCiNifF6mEOaFpXAt2N-Q7oaA37ZQk-->
-                    <h2>produkt</h2>
-                    <p>Kr 1999</p>
-                </article>
-                <article>
-                    <img src="ressurser/Bilder/bildeavdesktopp.jpg" alt="bilde av skrivebord">
-                    <!--https://fastly.picsum.photos/id/7/367/267.jpg?hmac=7scfIEZwG08cgYCiNifF6mEOaFpXAt2N-Q7oaA37ZQk-->
-                    <h2>produkt</h2>
-                    <p>Kr 1999</p>
-                </article>
-            </section>
-            
-            <section id="mest-populære-produkter">
-                <h2>Våre mest populære Katagorier</h2>
-                <p> Oppdag beste av det beste</p>
-                <article class="Katagorier">
-                    <h3>Categori 1</h3>
-                </article>
-                <article class="Katagorier">
-                    <h3>Categori 2</h3>
-                </article>
-                <article class="Katagorier3">
-                    <h3>Categori 3</h3>
-                </article>
-                <article class="Katagorier">
-                    <h3>Categori 4</h3>
-                </article>
-                <article class="Katagorier">
-                    <h3>Categori 5</h3>
-                </article>
-            </section>
-        </main>
-        
-            <h2>Anmeldels</h2>
-            <section class="anmedels">
-                <img src="ressurser/Bilder/bildeavelv.jpg" alt="bilde av elv">
-                <!---https://fastly.picsum.photos/id/28/367/267.jpg?hmac=yLGWd6QHCcj0A8iajtgeax570C_GRx3TnhfJn8V0GM4-->
-                <h3>Rober Labrador</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and 
-                    scrambled it to make a type specimen book.</p>
-            </section>
-            <section class="anmedels">
-                <img src="ressurser/Bilder/bildeavelv.jpg" alt="bilde av elv">
-                <!---https://fastly.picsum.photos/id/28/367/267.jpg?hmac=yLGWd6QHCcj0A8iajtgeax570C_GRx3TnhfJn8V0GM4-->
-                <h3>Rober Labrador</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                      when an unknown printer took a galley of type and 
-                      scrambled it to make a type specimen book.</p>
-            </section>
-            <section class="anmedels">
-                <img src="ressurser/Bilder/bildeavelv.jpg" alt="bilde av elv">
-                <!---https://fastly.picsum.photos/id/28/367/267.jpg?hmac=yLGWd6QHCcj0A8iajtgeax570C_GRx3TnhfJn8V0GM4-->
-                <h3>Rober Labrador</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                      when an unknown printer took a galley of type and 
-                      scrambled it to make a type specimen book.</p>
-            </section>
-            <section class="anmedels">
-                <img src="ressurser/Bilder/bildeavelv.jpg" alt="bilde av elv">
-                <!---https://fastly.picsum.photos/id/28/367/267.jpg?hmac=yLGWd6QHCcj0A8iajtgeax570C_GRx3TnhfJn8V0GM4-->
-                <h3>Rober Labrador</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                      when an unknown printer took a galley of type and 
-                      scrambled it to make a type specimen book.</p>
-            </section>
+    <article class="footer-section full-width">
+      <h1>Logo</h1>
+      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+    </article>
+
     
-        <footer class="footer">
-            <section>
-                <h2>Logo</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            </section>
-            <section id="informasjon">
-                <h2>Kontakt</h2>
-                <P> <i class="fa-solid fa-location-dot"></i> Adresse: B R A Veien 4, 1757 Halden</P>
-                <p><i class="fa-solid fa-phone"></i> Telefon: 69608000</p>
-                <p><i class="fa-solid fa-envelope"></i> E-post:  halden.hiof.no</p>
-                <p><i class="fa-solid fa-clock"></i> Åpeningstider: stenger 14:00</p>
-            </section>
-            <section>
-                <h2>Snarveien</h2>
-                <p><a href="#beste-produkter"></a>Produkter</p>
-                <p><a href="#mest-populære-produkte"></a>Katagorier</p>
-                <p><a href="#informasjon"></a>Kontakt oss</p>
-                <a href="#">tilgjengelighetserklæring</a>
-            </section>
-            <section>
-                <h3>SOSIALE MEDIER</h3>
-                <ul class="sosiale" aria-label="Sosiale medier">
-                    <li><a href="https://www.instagram.com/" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="https://www.facebook.com/" aria-label="facebook"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="https://www.linkedin.com/" aria-label="linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="https://no.pinterest.com/" aria-label="pinterest"><i class="fa-brands fa-pinterest"></i></a></li>
-                </ul>
-            </section>
-        </footer>
-    </div>
-    </body>
+    <article class="footer-section">
+      <h2>Kontakt</h2>
+      <ul>
+        <li><span>📍 Adresse:</span> B R A Veien 4, 1757 Halden</li>
+        <li><span>📞 Telefon:</span> 69 60 80 00</li>
+        <li><span>✉️ E-post:</span> halden@hiof.no</li>
+        <li><span>⏰ Åpningstider:</span> Stenger 15:00</li>
+      </ul>
+    </article>
+
     
+    <article class="footer-section">
+      <h2>Snarveier</h2>
+      <ul>
+        <li><a href="#popular-products">Produkter</a></li>
+        <li><a href="#popular-categories">Kategorier</a></li>
+        <li><a href="#contact">Kontakt oss</a></li>
+        <li><a href="">tilgjenlighetserklæring</a></li>
+      </ul>
+    </article>
+
     
+    <article class="footer-section">
+      <h2>Sosiale Medier</h2>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/"><img src="ressurser/Bilder/instegram.png" alt="Instagram"></a>
+        <a href="https://www.facebook.com/"><img src="ressurser/Bilder/facebook.png" alt="Facebook"></a>
+        <a href="https://www.linkedin.com/"><img src="ressurser/Bilder/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://no.pinterest.com/"><img src="ressurser/Bilder/pintest.jpg" alt="Pinterest"></a>
+      </div>
+    </article>
+  </section>
+</footer>
+  <button id="back-to-top" aria-label="Back to Top">↑</button>
+</div>
+<script src="ressurser/script.js"></script>
+</body>
 </html>
